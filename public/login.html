@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0a2a66, #0788a5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0a2a66;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      width: 350px;
+      text-align: center;
+      color: #000;
+    }
+
+    .login-container h1 {
+      margin-bottom: 20px;
+      color: #0788a5;
+    }
+
+    .login-container label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+      font-weight: bold;
+      color: #0a2a66;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background: #0a2a66;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .login-container button:hover {
+      background: #0788a5;
+    }
+
+    .login-container a {
+      display: block;
+      margin-top: 10px;
+      color: #0a2a66;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container a:hover {
+      color: #0788a5;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #0a2a66;
+      text-align: center;
+      padding: 10px;
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Flowtify.jpeg" alt="Logo de la marca">
+    <h2>Flowtify</h2>
+  </header>
+  
+  <div class="login-container">
+    <h1>Iniciar Sesión</h1>
+  <form onsubmit="return validarFormulario();">
+  <label for="usuario">usuario</label>
+  <input type="text" id="usuario" name="usuario" required>
+
+  <label for="password">password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Ingresar</button>
+
+  <p id="mensajeValidacion" style="color: black;"></p>
+</form>
+    <a href="registro.html">Crear cuenta</a>
+    <a href="recuperar.html">Olvidé mi contraseña</a>
+  </div>
+
+  <footer>
+    © 2025 - Mi Aplicación
+  </footer>
+ <script src="js/login.js"></script>
+  <script src="validacionF.js"></script>
+</body>
+</html>
